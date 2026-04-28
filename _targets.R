@@ -1,4 +1,4 @@
-# General Targets Workflow Template --------------------------------------------
+# Workflow for ingesting and curating PNG National Statistical Office data -----
 
 
 ## Load libraries and custom functions ----
