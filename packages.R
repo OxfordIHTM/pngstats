@@ -15,3 +15,9 @@ library(openxlsx)
 library(ggplot2)
 library(quarto)
 
+
+## Web and PDF scraping tools ----
+
+library(rvest)
+library(pdftools)
+
