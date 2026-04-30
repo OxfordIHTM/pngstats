@@ -9,9 +9,18 @@ for (f in list.files(here::here("R"), full.names = TRUE)) source (f)
 ## Data targets ----
 data_targets <- tar_plan(
   tar_target(
-    name = regional_population_2024,
-    command = pop_get_regional_2024()
+    name = population_region_2024,
+    command = pop_get_regional_2024(
+      .url = "https://www.nso.gov.pg/statistics/population/"
+    )
+  ),
+  tar_target(
+    name = population_province_2024,
+    command = pop_get_provincial_2024(
+      .url = "https://www.nso.gov.pg/statistics/population/"
+    )
   )
+
 )
 
 
